@@ -24,7 +24,7 @@ public class Main{
 
             q1=v;
 
-            System.out.printf("%d %d %d %d\n",q50,q10,q5,q1);
+            System.out.printf("%d %d %d %d\n\n",q50,q10,q5,q1);
             q++;
 
             v=sc.nextInt();
