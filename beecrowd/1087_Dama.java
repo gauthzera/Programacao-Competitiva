@@ -1,0 +1,36 @@
+import java.util.*;
+   
+   public class Main {
+       public static void main(String[] args) {
+       Locale.setDefault(Locale.US);
+       Scanner sc=new Scanner(System.in);
+   
+     int x1,x2,y1,y2;
+  
+      x1=sc.nextInt();
+      y1=sc.nextInt();
+      x2=sc.nextInt();
+      y2=sc.nextInt();
+  
+  
+      while(!(x1==0 && x2==0 && y1==0 && y2==0)){
+  
+          if(x1==x2 && y1==y2){
+              System.out.println("0");
+          }else if((Math.abs(x1-x2) == Math.abs(y1-y2))|| x1==x2 || y1==y2){ //é diagonal ou está na mesma linha ou na mesma coluna
+             System.out.println("1");
+         }else{
+              System.out.println("2");
+         }
+ 
+      x1=sc.nextInt();
+      y1=sc.nextInt();
+      x2=sc.nextInt();
+      y2=sc.nextInt();
+  
+     }
+ 
+ 
+     sc.close();
+       }
+  }
