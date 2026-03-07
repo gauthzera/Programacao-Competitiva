@@ -1,27 +1,23 @@
 #include <stdio.h>
-#include <string.h>
 
-int main(){
-    char palavra[100];
-    scanf("%s",palavra);
+int main() {
+    char str[101];
+    scanf("%s",str);
+    
+    int letras[26]={0}; //vetor que marca as letras 
+    
+    for(int i=0;str[i]!='\0';i++){
+        letras[str[i]-'a']=1; //a letra apareceu = 1
+    }
 
-    int tam=strlen(palavra);
     int q=0;
-    for(int i=0;i<tam;i++){     //vai percorrer todas as letras da palavra
-            int repetido=0;
-        for(int j=0;j<i;j++){   //verifica apenas as letras que foram percorridas
-            if(palavra[i]==palavra[j]){
-                repetido = 1;
-                break;
-            }
-        }
-        if(!repetido)q++;
+    for(int i=0;i<26;i++){
+        if(letras[i]==1)q++;
     }
-    if(q%2==0){
-        printf("CHAT WITH HER!\n");
-    }else{
-        printf("IGNORE HIM!\n");
-    }
+
+
+    if(q%2==0)printf("CHAT WITH HER!");
+    else printf("IGNORE HIM!");
 
     return 0;
 }
