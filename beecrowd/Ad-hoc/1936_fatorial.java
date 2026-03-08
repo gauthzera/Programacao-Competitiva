@@ -1,36 +1,33 @@
-import java.util.Scanner;
-import java.util.Locale;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
-        Scanner sc= new Scanner(System.in);
-
+        Scanner sc = new Scanner(System.in);
+                
         int n=sc.nextInt();
         int[] fatoriais= {1, 2 , 6, 24, 120 , 720 , 5040 ,40320};
-        //achar qual o maior fatorial com base no valor de n
-        int indiceMaior=0;
+        int indMaior=0;
         for(int i=7;i>=0;i--){
-            if(fatoriais[i]>n){
-                continue;
-            }else{
-                indiceMaior = i;
-                break;
+            if(fatoriais[i]<=n){
+            indMaior=i;
+            break;
             }
         }
+
         int q=0;
-        for(int i=indiceMaior;i>=0;i--){
-            if(n>0){
-                while(fatoriais[i]<=n){
-                    n-=fatoriais[i];
-                    q++;
-                }
+        int i=indMaior;            
+        while(n>0){
+            if(n>=fatoriais[i]){
+                n-=fatoriais[i];
+                q++;
             }else{
-                break;
+                i--;
             }
         }
 
-        System.out.println(q);
-
-        }
+        System.out.printf("%d\n",q);
+        
+        sc.close();
+    }
 }
