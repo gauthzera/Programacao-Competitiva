@@ -21,8 +21,7 @@ void quicksort(long long int arr[],int low, int high){
     }
     if(low<j)quicksort(arr,low,j);
     if(i<high)quicksort(arr,i,high);
-    
-    
+
 }
  
 int main(){
@@ -44,7 +43,7 @@ int main(){
  
     int q=1;
     int max=1;
-    int pos=n-1;
+    
     for(int i=n-1;i>0;i--){
         if(arr[i]-arr[i-1]<=k){
             q++;
