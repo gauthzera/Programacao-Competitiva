@@ -9,7 +9,7 @@ int verifica(char s[],int n,int inicio){
     
     for(int i=0;i<n;i++){
         int c=s[i]-'a';
-        int valor=(i%2==0) ? inicio : 1 - inicio //letra c recebe 1 ou 0;
+        int valor=(i%2==0) ? inicio : 1 - inicio; //letra c recebe 1 ou 0
         if(letras[c]==-1){
             letras[c]=valor;
         }else{
