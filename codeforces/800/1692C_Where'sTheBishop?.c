@@ -14,7 +14,7 @@ int main(){
         
         int c,r;
         for(int i=1;i<7;i++){
-            int aux1=0,aux2=0; //sinaliza que encontrou a dama
+            int aux1=0,aux2=0; //sinaliza que encontrou o bispo
             for(int j=1;j<7;j++){
                 if(tab[i][j]=='#')
                     if(tab[i-1][j-1]=='#' && tab[i-1][j+1]=='#'){
