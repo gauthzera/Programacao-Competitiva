@@ -18,7 +18,7 @@ int main(){
                 q=1;
             }
         }
-        printf("%d\n",max+1); 
+        printf("%d\n",max+1);
         
     }
 
