@@ -75,7 +75,7 @@ int main(){
     Fila* oeste=criaFila();
     Fila* leste=criaFila();
 
-    Fila* final=criaFila(); //fila fila na ordem certa
+    Fila* final=criaFila(); //fila final na ordem certa
 
     scanf("%s",p);
 
@@ -131,7 +131,7 @@ int main(){
            inserir(final,leste->primeiro->valor);
            remover(leste);
         }
-        if(isVazia(norte) && isVazia(sul) && isVazia(leste) && isVazia(oeste))break; //todos os listas vazias
+        if(isVazia(norte) && isVazia(sul) && isVazia(leste) && isVazia(oeste))break; //todos as listas vazias
     }
 
     mostrar(final);
