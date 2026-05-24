@@ -64,7 +64,7 @@ int main(){
                 item[indx2++]=itens[indx1++];
             }else{
 
-                item[indx2]='\0'; //foram item por item e adiciona na árvore
+                item[indx2]='\0'; //forma item por item e adiciona na árvore
                 indx2=0;
                 raiz=inserir(raiz,item);
                 indx1++;
