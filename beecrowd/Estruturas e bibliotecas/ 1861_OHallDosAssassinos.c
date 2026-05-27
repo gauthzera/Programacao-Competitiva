@@ -57,10 +57,11 @@ int main(){
     while(scanf("%s %s",A,M)==2){
        if(buscar(raiz,A)==NULL){
             raiz=inserir(raiz,A,1);
-       }else if(buscar(raiz,A)!=NULL){
+       }else{
             No* n=buscar(raiz,A);
             if(n->quant!=-1)n->quant++;
        }
+       
        if(buscar(raiz,M)==NULL){
             raiz=inserir(raiz,M,-1);
        }else{
