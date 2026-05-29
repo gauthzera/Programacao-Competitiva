@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ll long long
 
 int custo(char c[],char n1,char n2){
     int q=0;
