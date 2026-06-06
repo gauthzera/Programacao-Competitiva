@@ -3,8 +3,8 @@
 Repositório com minhas resoluções de programação competitiva.
 
 ## Plataformas
-- Codeforces
-- Beecrowd
+- Codeforces -> https://codeforces.com/profile/gauthzera
+- Beecrowd -> https://judge.beecrowd.com/pt/profile/1188719
 
 ## Linguagens
 - C
